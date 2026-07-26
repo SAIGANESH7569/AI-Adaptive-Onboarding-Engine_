@@ -1,0 +1,369 @@
+.login-page {
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+/* #learning-illustration {
+    height: 75%;
+    width: 75%;
+    object-fit: cover;
+    position: relative;
+    top: 100px;
+    left: 20px;
+
+} */
+
+.login-page-image {
+
+    /* background-color: #f5f5f5;
+    height: 100vh;
+    background-image: url('../assets/learning_illustration.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+
+    background-color: rgba(79, 70, 229, .08);
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+    background-image: url('../assets/learning_illustration.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.login-page-image h1 {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+
+    font-size: 3rem;
+    color: #0F172A;
+}
+
+.login-page-image p {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+
+    color: #64748B;
+    font-size: 16px;
+}
+
+
+.login-container,
+.forgot-password-container,
+.otp-verification-container,
+.reset-password-container {
+    height: 100vh;
+    width: fit-content;
+    margin: 40px 0 0 60px;
+    background-color: white;
+    /* background: linear-gradient(135deg,
+            #EEF2FF 0%,
+            #FFFFFF 100%); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.login-container-header,
+.forgot-password-header,
+.otp-verification-header,
+.reset-password-header {
+    padding: 10px;
+
+}
+
+.login-container-header h2,
+.forgot-password-header h2,
+.otp-verification-header h2,
+.reset-password-header h2 {
+    margin-bottom: 10px;
+}
+
+.login-form,
+.forgot-password-form,
+.otp-verification-form,
+.reset-password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    width: 500px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+
+}
+
+.form-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9CA3AF;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 14px 14px 14px 46px;
+
+
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: .3s;
+
+}
+
+.input-wrapper input:focus {
+    border-color: #4F46E5;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, .12);
+}
+
+.login-btn,
+.reset-password-btn {
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background: #4F46E5;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.login-btn:hover {
+    background: #4338CA;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+}
+
+.form-options a {
+    color: #4F46E5;
+    text-decoration: none;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid#CBD5E1;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.social-btn:hover {
+    background: #EEF2FF;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+    margin-left: 4px;
+    margin-top: 2px;
+    font-size: 16px;
+}
+
+.divider-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.divider {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #CBD5E1;
+}
+
+.divider-text {
+    color: #9CA3AF;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.signup-link {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.error-input {
+    border: 1px solid red !important;
+    border-radius: 10px;
+}
+
+.error-input:focus {
+    border-color: red !important;
+    box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.15) !important;
+}
+
+.signup-link-text {
+    text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 992px) {
+
+    .login-page {
+        grid-template-columns: 1fr;
+    }
+
+    .login-page-image {
+        height: 300px;
+        background-size: 50%;
+    }
+
+    .login-container,
+    .forgot-password-container,
+    .otp-verification-container,
+    .reset-password-container {
+        width: 100%;
+        margin: 20px auto;
+        align-items: center;
+    }
+
+    .login-form,
+    .forgot-password-form,
+    .otp-verification-form,
+    .reset-password-form {
+        width: 90%;
+        max-width: 500px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .login-page {
+        display: block;
+        width: 100vw;
+
+    }
+
+    .login-page-image {
+        display: none;
+        background-color: white;
+    }
+
+    .login-container,
+    .forgot-password-container,
+    .otp-verification-container,
+    .reset-password-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 30px 20px;
+        align-items: stretch;
+    }
+
+    .login-form,
+    .forgot-password-form,
+    .otp-verification-form,
+    .reset-password-form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .login-container-header,
+    .forgot-password-header,
+    .otp-verification-header,
+    .reset-password-header {
+        padding: 0;
+    }
+
+    .login-container-header h2,
+    .forgot-password-header h2,
+    .otp-verification-header h2,
+    .reset-password-header h2 {
+        font-size: 2rem;
+    }
+
+    .form-options {
+        font-size: 13px;
+    }
+
+    .social-login {
+        flex-direction: column;
+    }
+
+    .social-btn {
+        width: 100%;
+    }
+
+}
